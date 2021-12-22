@@ -37,6 +37,12 @@ export default {
   props: {
     msg: String,
   },
+  data: () => ({
+    test: null,
+  }),
+  async created() {
+    this.test = await this.axios.get('https://catfact.ninja/fact');
+  },
 };
 </script>
 
