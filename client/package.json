@@ -8,11 +8,13 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^2.0.6",
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-axios": "^3.4.0",
     "vue-router": "^3.2.0",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "vuetify": "^2.4.0"
   },
   "devDependencies": {
@@ -39,14 +41,28 @@
     "settings": {
       "import/resolver": {
         "node": {
-          "extensions": [".js", ".jsx", ".ts", ".tsx"],
-          "moduleDirectory": ["node_modules", "src/"]
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ],
+          "moduleDirectory": [
+            "node_modules",
+            "src/"
+          ]
         },
         "alias": {
           "map": [
-              ["@", "./resources"]
-            ],
-          "extensions": [".js", ".vue"]
+            [
+              "@",
+              "./resources"
+            ]
+          ],
+          "extensions": [
+            ".js",
+            ".vue"
+          ]
         }
       }
     },
