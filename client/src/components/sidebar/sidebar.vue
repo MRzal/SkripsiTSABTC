@@ -56,7 +56,7 @@ export default {
       {
         title: 'Preprocessing',
         icon: 'fa-sync',
-        path: '/about',
+        path: '/preprocessing',
       },
       {
         title: 'Penentuan Model',
