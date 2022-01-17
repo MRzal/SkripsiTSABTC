@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Dataset from '../views/Dataset.vue';
+import Preprocessing from '../views/Preprocessing.vue';
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/dataset',
     name: 'Dataset',
     component: Dataset,
+  },
+  {
+    path: '/preprocessing',
+    name: 'Preprocessing',
+    component: Preprocessing,
   },
   {
     path: '/about',
