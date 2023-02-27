@@ -1,18 +1,24 @@
-# SkripsiTSABTC
+# client
 
-## Requeiremennt
-1. node js v.14 or above 
+## Project setup
+```
+npm install
+```
 
-## Package Version
-1. Vue 2.6
-2. Vuetify v.2.4
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-## How to Run Client 
-### Install Package
+### Compiles and minifies for production
 ```
-    npm install 
+npm run build
 ```
-### Running client
+
+### Lints and fixes files
 ```
-    npm run serve 
+npm run lint
 ```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
