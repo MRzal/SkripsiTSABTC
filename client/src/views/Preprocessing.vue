@@ -117,7 +117,7 @@ export default {
     pageSizes: [5, 10, 20, 50, 100],
   }),
   methods: {
-    async fetchDataTable(page, limit, endpoint) {
+    async fetchDataTable(page, limit, endpoint = this.items[this.tab].endpoint) {
       const getData = {
         crossDomain: true,
         withCredentials: true,
