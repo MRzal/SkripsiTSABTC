@@ -3,7 +3,7 @@
     <v-card class="text-h4 font-weight-bold">
       <v-card-title>Upload Dataset</v-card-title>
       <v-container>
-        <v-row class="d-flex align-content-center">
+        <v-row class="d-flex align-content-center mx-auto">
           <v-file-input v-model="file" truncate-length="45" type="file">
           </v-file-input>
           <v-btn

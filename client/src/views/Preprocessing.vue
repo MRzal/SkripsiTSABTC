@@ -185,8 +185,8 @@ export default {
       console.log(tab);
     },
   },
-  mounted() {
-    this.fetchDataTable(1, 20, 'fill_missing');
+  async mounted() {
+    await this.fetchDataTable(1, 20, 'fill_missing');
   },
 };
 </script>

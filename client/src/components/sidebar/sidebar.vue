@@ -61,17 +61,17 @@ export default {
       {
         title: 'Penentuan Model',
         icon: 'fab fa-bitcoin',
-        path: '/about',
+        path: '/model',
       },
       {
         title: 'Feature Extraction',
         icon: 'fa-sitemap',
-        path: '/about',
+        path: '/feature',
       },
       {
         title: 'ARIMAX',
         icon: 'fa-microchip',
-        path: '/about',
+        path: '/arimax',
       },
       {
         title: 'Hasil Prediksi',

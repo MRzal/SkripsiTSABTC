@@ -3,6 +3,9 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Dataset from '../views/Dataset.vue';
 import Preprocessing from '../views/Preprocessing.vue';
+import Model from '../views/Model.vue';
+import Feature from '../views/Feature.vue';
+import Arimax from '../views/Arimax.vue';
 
 Vue.use(VueRouter);
 
@@ -21,6 +24,21 @@ const routes = [
     path: '/preprocessing',
     name: 'Preprocessing',
     component: Preprocessing,
+  },
+  {
+    path: '/model',
+    name: 'Model',
+    component: Model,
+  },
+  {
+    path: '/feature',
+    name: 'Feature',
+    component: Feature,
+  },
+  {
+    path: '/arimax',
+    name: 'Arimax',
+    component: Arimax,
   },
   {
     path: '/about',
