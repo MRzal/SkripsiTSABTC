@@ -6,13 +6,10 @@
       </v-list-item-avatar>
       <v-list-item-title>
         Muh. Rizal Al Qodri
-        <br>
+        <br />
         4611417027
       </v-list-item-title>
-      <v-btn
-        icon
-        @click.stop="changeStatusMini"
-      >
+      <v-btn icon @click.stop="changeStatusMini">
         <v-icon>mdi-chevron-left</v-icon>
       </v-btn>
     </v-list-item>
@@ -20,12 +17,7 @@
     <v-divider></v-divider>
 
     <v-list dense nav dark>
-      <v-list-item
-        v-for="item in menus"
-        :key="item.title"
-        :to="item.path"
-        link
-      >
+      <v-list-item v-for="item in menus" :key="item.title" :to="item.path" link>
         <v-list-item-icon color="#ffff">
           <v-icon>{{ item.icon }}</v-icon>
         </v-list-item-icon>
@@ -39,55 +31,55 @@
 </template>
 <script>
 export default {
-  props: ['mini'],
-  name: 'sidebar',
+  props: ["mini"],
+  name: "sidebar",
   data: () => ({
     menus: [
       {
-        title: 'Dashboard',
-        icon: 'fa-home',
-        path: '/',
+        title: "Dashboard",
+        icon: "fa-home",
+        path: "/",
       },
       {
-        title: 'Dataset',
-        icon: 'fa-database',
-        path: '/dataset',
+        title: "Dataset",
+        icon: "fa-database",
+        path: "/dataset",
       },
       {
-        title: 'Preprocessing',
-        icon: 'fa-sync',
-        path: '/preprocessing',
+        title: "Preprocessing",
+        icon: "fa-sync",
+        path: "/preprocessing",
       },
       {
-        title: 'Penentuan Model',
-        icon: 'fab fa-bitcoin',
-        path: '/model',
+        title: "Penentuan Model",
+        icon: "fab fa-bitcoin",
+        path: "/model",
       },
       {
-        title: 'Feature Extraction',
-        icon: 'fa-sitemap',
-        path: '/feature',
+        title: "Feature Extraction",
+        icon: "fa-sitemap",
+        path: "/feature",
       },
       {
-        title: 'ARIMAX',
-        icon: 'fa-microchip',
-        path: '/arimax',
+        title: "ARIMAX",
+        icon: "fa-microchip",
+        path: "/arimax",
       },
+      // {
+      //   title: 'Hasil Prediksi',
+      //   icon: 'fa-chart-line',
+      //   path: '/about',
+      // },
       {
-        title: 'Hasil Prediksi',
-        icon: 'fa-chart-line',
-        path: '/about',
-      },
-      {
-        title: 'About',
-        icon: 'fa-info-circle',
-        path: '/about',
+        title: "About",
+        icon: "fa-info-circle",
+        path: "/about",
       },
     ],
   }),
   methods: {
     changeStatusMini() {
-      this.$emit('update:mini', !this.mini);
+      this.$emit("update:mini", !this.mini);
     },
   },
 };
